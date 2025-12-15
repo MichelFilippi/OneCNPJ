@@ -1,26 +1,66 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.EntityFrameworkCore;
+using OneCNPJ.Data;
+using Serilog;
+using System.Text;
 
-// Add services to the container.
-builder.Services.AddRazorPages();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+internal class Program
 {
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    private static void Main(string[] args)
+    {
+        // Registra encodings legacy, incluindo 1252
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+
+        var builder = WebApplication.CreateBuilder(args);
+
+        // Configura��o do ApplicationDbContext com PostgreSQL
+        builder.Services.AddDbContextFactory<ApplicationDbContext>(options =>
+            options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+        // Add services to the container.
+        // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
+        builder.Services.AddOpenApi();
+
+        // Configura��o do Serilog
+        Log.Logger = new LoggerConfiguration()
+            .ReadFrom.Configuration(builder.Configuration)
+            .WriteTo.Console()
+            .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+            .Enrich.FromLogContext()
+            .CreateLogger();
+
+        builder.Host.UseSerilog();
+
+        builder.Services.AddHealthChecks();
+
+        builder.Services.AddControllers();
+
+        //builder.Services.AddScoped<ICnpjRepository, CnpjRepository>();
+        //builder.Services.AddScoped<IConteudoRepository, ConteudoRepository>();
+        //builder.Services.AddScoped<IFalhaRepository, FalhaRepository>();
+        //builder.Services.AddScoped<IIgnoradoRepository, IgnoradoRepository>();
+        //builder.Services.AddScoped<IRegistroClasseRepository, RegistroClasseRepository>();
+        //builder.Services.AddScoped<IRegistroFundoRepository, RegistroFundoRepository>();
+        //builder.Services.AddScoped<IRegistroSubclasseRepository, RegistroSubclasseRepository>();
+        //builder.Services.AddScoped<ILayoutRepository, LayoutRepository>();
+        //builder.Services.AddScoped<ILayoutCampoRepository, LayoutCampoRepository>();
+
+        //builder.Services.AddScoped<ICnpjGetOneService, CnpjGetOneService>();
+        //builder.Services.AddScoped<ICnpjImportService, CnpjImportService>();
+        //builder.Services.AddScoped<IConteudoImportService, ConteudoImportService>();
+        //builder.Services.AddScoped<IRegistroCnpjImportService, RegistroCnpjImportService>();
+
+        var app = builder.Build();
+
+        // Configure the HTTP request pipeline.
+        if (app.Environment.IsDevelopment())
+        {
+            app.MapOpenApi();
+        }
+
+        app.UseHttpsRedirection();
+        app.MapHealthChecks("/health");
+
+        app.MapControllers();
+        app.Run();
+    }
 }
-
-app.UseHttpsRedirection();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapStaticAssets();
-app.MapRazorPages()
-   .WithStaticAssets();
-
-app.Run();
