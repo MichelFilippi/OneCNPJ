@@ -1,0 +1,84 @@
+## =========================
+## Visual Studio
+## =========================
+
+.vs/
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+
+## =========================
+## Build Results
+## =========================
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa]rm/
+[Aa]rm64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+## =========================
+## .NET Core
+## =========================
+
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## =========================
+## ASP.NET
+## =========================
+
+wwwroot/lib/
+appsettings.*.json
+
+## =========================
+## Test results
+## =========================
+
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+## =========================
+## NuGet
+## =========================
+
+*.nupkg
+*.snupkg
+# packages/   <-- use somente se não estiver usando PackageReference
+# *.nuget.props
+# *.nuget.targets
+
+## =========================
+## Rider / VS Code
+## =========================
+
+.idea/
+.vscode/
+
+## =========================
+## Logs
+## =========================
+
+*.log
+
+## =========================
+## OS / System files
+## =========================
+
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## =========================
+## Others
+## =========================
+
+*.cache
+*.tmp

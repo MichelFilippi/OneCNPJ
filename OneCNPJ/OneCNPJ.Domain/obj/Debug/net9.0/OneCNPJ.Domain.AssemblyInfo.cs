@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneCNPJ.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07c7af254ad800e6c72072440a7f5f6f8569edf4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+938a67170474d7576da4ad9e522edc50f2c89e3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneCNPJ.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneCNPJ.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
