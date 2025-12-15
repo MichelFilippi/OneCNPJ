@@ -1,1 +1,21 @@
-.vs
+# Visual Studio / user-specific
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+
+# IDE folders
+.vscode/
+.idea/
+
+# NuGet / packages
+*.nupkg
+.packages/
+
+# Logs
+*.log
