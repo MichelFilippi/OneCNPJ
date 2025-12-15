@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneCNPJ.API", "CloudNPJ\OneCNPJ.API.csproj", "{3CACE2F5-326D-44D7-AAC7-4E21AA6E5FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneCNPJ.Application", "OneCNPJ\OneCNPJ.Application.csproj", "{636469D9-4AFC-4A8D-9DC3-B423F094F27B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CACE2F5-326D-44D7-AAC7-4E21AA6E5FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CACE2F5-326D-44D7-AAC7-4E21AA6E5FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CACE2F5-326D-44D7-AAC7-4E21AA6E5FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CACE2F5-326D-44D7-AAC7-4E21AA6E5FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{636469D9-4AFC-4A8D-9DC3-B423F094F27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636469D9-4AFC-4A8D-9DC3-B423F094F27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636469D9-4AFC-4A8D-9DC3-B423F094F27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636469D9-4AFC-4A8D-9DC3-B423F094F27B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF28C63C-CD38-4A27-B404-0EBD1F4B6AF9}
+	EndGlobalSection
+EndGlobal
