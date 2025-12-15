@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneCNPJ.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc9114aa516c88d066e0521f3be63e11426b1309")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+521980e76b7a6cad0268724ffd3f9c97f73447ba")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneCNPJ.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneCNPJ.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

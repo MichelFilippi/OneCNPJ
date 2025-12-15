@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "OneCNPJ.Data": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

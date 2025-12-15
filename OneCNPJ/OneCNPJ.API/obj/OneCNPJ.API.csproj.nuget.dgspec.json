@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\miche\\source\\repos\\CloudNPJ\\CloudNPJ\\OneCNPJ.API.csproj": {}
+    "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\miche\\source\\repos\\CloudNPJ\\CloudNPJ\\OneCNPJ.API.csproj": {
+    "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miche\\source\\repos\\CloudNPJ\\CloudNPJ\\OneCNPJ.API.csproj",
+        "projectUniqueName": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj",
         "projectName": "OneCNPJ.API",
-        "projectPath": "C:\\Users\\miche\\source\\repos\\CloudNPJ\\CloudNPJ\\OneCNPJ.API.csproj",
+        "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj",
         "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miche\\source\\repos\\CloudNPJ\\CloudNPJ\\obj\\",
+        "outputPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,6 +51,12 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.22.1, )"
