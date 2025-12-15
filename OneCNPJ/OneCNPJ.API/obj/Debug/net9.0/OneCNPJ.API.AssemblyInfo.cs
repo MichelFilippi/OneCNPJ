@@ -11,11 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("c68c8876-a057-4fd3-ad7d-1fc2896e39de")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneCNPJ.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07c7af254ad800e6c72072440a7f5f6f8569edf4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cef7519790325d0710869d18e5323dd4bb4482bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneCNPJ.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneCNPJ.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
