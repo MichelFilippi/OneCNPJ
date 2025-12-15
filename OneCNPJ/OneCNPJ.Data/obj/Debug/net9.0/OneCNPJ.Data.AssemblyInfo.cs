@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneCNPJ.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63bab0a4d5a8dcfad9842f456664df6b4e95287f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b17e7d50f618e7017ab53779ffd4dc60515d9bdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneCNPJ.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneCNPJ.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
