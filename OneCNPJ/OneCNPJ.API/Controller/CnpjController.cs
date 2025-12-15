@@ -1,6 +1,6 @@
 ﻿//using Microsoft.AspNetCore.Mvc;
 
-//namespace OneCadfi.API.Controllers
+//namespace OneCNPJ.API.Controllers
 //{
 //    [Route("api/v1/[controller]")]
 //    [ApiController]
