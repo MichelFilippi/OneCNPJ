@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj": {}
+    "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj": {
+    "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj",
+        "projectUniqueName": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj",
         "projectName": "OneCNPJ.API",
-        "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.API\\obj\\",
+        "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.API\\OneCNPJ.API.csproj",
+        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,11 +33,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj": {
-                "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj"
+              "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj": {
+                "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj"
               },
-              "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Services\\OneCNPJ.Services.csproj": {
-                "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Services\\OneCNPJ.Services.csproj"
+              "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Services\\OneCNPJ.Services.csproj": {
+                "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Services\\OneCNPJ.Services.csproj"
               }
             }
           }
@@ -52,7 +52,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -110,24 +110,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj": {
+    "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj",
+        "projectUniqueName": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj",
         "projectName": "OneCNPJ.Common",
-        "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Common\\obj\\",
+        "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj",
+        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -155,7 +155,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -186,24 +186,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj": {
+    "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj",
+        "projectUniqueName": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj",
         "projectName": "OneCNPJ.Data",
-        "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Data\\obj\\",
+        "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj",
+        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -219,8 +219,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj": {
-                "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj"
+              "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj": {
+                "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj"
               }
             }
           }
@@ -235,7 +235,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -278,24 +278,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj": {
+    "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj",
         "projectName": "OneCNPJ.Domain",
-        "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Domain\\obj\\",
+        "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj",
+        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -311,8 +311,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj": {
-                "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj"
+              "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj": {
+                "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj"
               }
             }
           }
@@ -327,7 +327,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -354,24 +354,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj": {
+    "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj",
         "projectName": "OneCNPJ.DTOs",
-        "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.DTOs\\obj\\",
+        "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj",
+        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -387,11 +387,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj": {
-                "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj"
+              "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj": {
+                "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Common\\OneCNPJ.Common.csproj"
               },
-              "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj": {
-                "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj"
+              "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj": {
+                "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Domain\\OneCNPJ.Domain.csproj"
               }
             }
           }
@@ -406,7 +406,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -427,24 +427,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Infrastructure\\OneCNPJ.Infrastructure.csproj": {
+    "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Infrastructure\\OneCNPJ.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Infrastructure\\OneCNPJ.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Infrastructure\\OneCNPJ.Infrastructure.csproj",
         "projectName": "OneCNPJ.Infrastructure",
-        "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Infrastructure\\OneCNPJ.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Infrastructure\\OneCNPJ.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -460,11 +460,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj": {
-                "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj"
+              "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj": {
+                "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Data\\OneCNPJ.Data.csproj"
               },
-              "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj": {
-                "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj"
+              "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj": {
+                "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj"
               }
             }
           }
@@ -479,7 +479,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -530,24 +530,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Services\\OneCNPJ.Services.csproj": {
+    "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Services\\OneCNPJ.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Services\\OneCNPJ.Services.csproj",
+        "projectUniqueName": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Services\\OneCNPJ.Services.csproj",
         "projectName": "OneCNPJ.Services",
-        "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Services\\OneCNPJ.Services.csproj",
-        "packagesPath": "C:\\Users\\tiago\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Services\\obj\\",
+        "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Services\\OneCNPJ.Services.csproj",
+        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\tiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -563,11 +563,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj": {
-                "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj"
+              "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj": {
+                "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.DTOs\\OneCNPJ.DTOs.csproj"
               },
-              "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Infrastructure\\OneCNPJ.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\tiago\\source\\repos\\OneCNPJ\\OneCNPJ\\OneCNPJ.Infrastructure\\OneCNPJ.Infrastructure.csproj"
+              "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Infrastructure\\OneCNPJ.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\miche\\source\\repos\\OneCNPJ\\OneCNPJ.Infrastructure\\OneCNPJ.Infrastructure.csproj"
               }
             }
           }
@@ -582,7 +582,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -617,7 +617,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
