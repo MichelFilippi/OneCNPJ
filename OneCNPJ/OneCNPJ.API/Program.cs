@@ -12,9 +12,11 @@ internal class Program
 
         var builder = WebApplication.CreateBuilder(args);
 
-        // Configura��o do ApplicationDbContext com PostgreSQL
-        builder.Services.AddDbContextFactory<ApplicationDbContext>(options =>
-            options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+        builder.Configuration
+            .AddJsonFile("appsettings.json", optional: false)
+            .AddEnvironmentVariables();
+
+
 
         // Add services to the container.
         // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -27,6 +29,13 @@ internal class Program
             .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
             .Enrich.FromLogContext()
             .CreateLogger();
+
+        // Configura��o do ApplicationDbContext com PostgreSQL
+        builder.Services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseNpgsql(
+                builder.Configuration.GetConnectionString("DefaultConnection"),
+                b => b.MigrationsAssembly("OneCNPJ.Data")
+            ));
 
         builder.Host.UseSerilog();
 

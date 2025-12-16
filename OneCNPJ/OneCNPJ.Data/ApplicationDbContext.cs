@@ -4,11 +4,10 @@ namespace OneCNPJ.Data
 {
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext() { }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        //public DbSet<Cnpj> Cnpj { get; set; }
+        public DbSet<Cnpj> Cnpj { get; set; }
         //public DbSet<Conteudo> Conteudos { get; set; }
         //public DbSet<Falha> Falhas { get; set; }
         //public DbSet<Ignorado> Ignorados { get; set; }
