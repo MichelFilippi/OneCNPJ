@@ -12,9 +12,8 @@ namespace OneCNPJ.DTOs.VOs
         : BaseVO,
           IEntityVO<CnpjSimples, CnpjSimplesVO, CnpjSimplesListaVO>
     {
-        public string CnpjBasico { get; set; } = string.Empty;
-        public virtual CnpjEmpresaVO? Empresa { get; set; }
-
+        public long CnpjBasico { get; set; }
+        public long CnpjEmpresaId { get; set; }
         public bool OptanteSimples { get; set; }
         public DateTime? DataOpcaoSimples { get; set; }
         public DateTime? DataExclusaoSimples { get; set; }
@@ -31,6 +30,7 @@ namespace OneCNPJ.DTOs.VOs
             {
                 Id = model.Id,
                 CnpjBasico = model.CnpjBasico,
+                CnpjEmpresaId = model.CnpjEmpresaId,
                 OptanteSimples = model.OptanteSimples,
                 DataOpcaoSimples = model.DataOpcaoSimples,
                 DataExclusaoSimples = model.DataExclusaoSimples,
@@ -49,6 +49,7 @@ namespace OneCNPJ.DTOs.VOs
             {
                 Id = model.Id,
                 CnpjBasico = model.CnpjBasico,
+                CnpjEmpresaId = model.CnpjEmpresaId,
                 OptanteSimples = model.OptanteSimples,
                 OptanteMei = model.OptanteMei,
                 Status = model.Status,
@@ -63,6 +64,7 @@ namespace OneCNPJ.DTOs.VOs
             {
                 Id = this.Id,
                 CnpjBasico = this.CnpjBasico,
+                CnpjEmpresaId = this.CnpjEmpresaId,
                 OptanteSimples = this.OptanteSimples,
                 DataOpcaoSimples = this.DataOpcaoSimples,
                 DataExclusaoSimples = this.DataExclusaoSimples,

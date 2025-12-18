@@ -14,14 +14,14 @@ namespace OneCNPJ.DTOs.VOs
         : BaseVO,
           IEntityVO<CnpjSocio, CnpjSocioVO, CnpjSocioListaVO>
     {
-        public string CnpjBasico { get; set; } = string.Empty;
+        public long CnpjBasico { get; set; } 
         public virtual CnpjEmpresaVO? Empresa { get; set; }
 
         public string TipoSocio { get; set; } = string.Empty;
         public string NomeSocio { get; set; } = string.Empty;
         public string DocumentoSocio { get; set; } = string.Empty;
 
-        public string QualificacaoSocioId { get; set; } = string.Empty;
+        public long QualificacaoSocioId { get; set; }
         public virtual QualificacaoSocioVO? QualificacaoSocio { get; set; }
 
         public DateTime? DataEntradaSociedade { get; set; }

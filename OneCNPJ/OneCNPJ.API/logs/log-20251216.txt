@@ -1,0 +1,1 @@
+2025-12-16 15:49:57.119 -03:00 [ERR] An error occurred using the connection to database 'one-cnpj' on server 'tcp://db:5432'.

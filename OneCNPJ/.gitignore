@@ -82,3 +82,7 @@ Desktop.ini
 
 *.cache
 *.tmp
+
+DockerFile
+docker-compose.yml
+OneCNPJ.Data\Migrations\

@@ -7,7 +7,14 @@ namespace OneCNPJ.Domain.Models
     public class CnpjSimples : BaseModel, IEntity
     {
         [Column("cnpj_basico")]
-        public string CnpjBasico { get; set; } = string.Empty;
+        public long CnpjBasico { get; set; }
+
+        [Column("cnpj_empresa")]
+        public long CnpjEmpresaId { get; set; }
+
+        [ForeignKey(nameof(CnpjEmpresaId))]
+        [DeleteBehavior(DeleteBehavior.Restrict)]
+        public virtual CnpjEmpresa? CnpjEmpresa { get; set; }
 
         [ForeignKey(nameof(CnpjBasico))]
         [DeleteBehavior(DeleteBehavior.Restrict)]

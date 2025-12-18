@@ -15,7 +15,7 @@ public class CnpjEstabelecimentoCnaeSecundario : BaseModel, IEntity
     public virtual CnpjEstabelecimento? Estabelecimento { get; set; }
 
     [Column("cnae_id")]
-    public string CnaeId { get; set; } = string.Empty;
+    public long CnaeId { get; set; } 
 
     [ForeignKey(nameof(CnaeId))]
     [DeleteBehavior(DeleteBehavior.Restrict)]

@@ -16,10 +16,8 @@ namespace OneCNPJ.DTOs.VOs
               CnpjEstabelecimentoCnaeSecundarioListaVO>
     {
         public long EstabelecimentoId { get; set; }
-        public virtual CnpjEstabelecimentoVO? Estabelecimento { get; set; }
 
-        public string CnaeId { get; set; } = string.Empty;
-        public virtual CnaeVO? Cnae { get; set; }
+        public long CnaeId { get; set; } 
 
         public CnpjEstabelecimentoCnaeSecundarioVO() { }
 
