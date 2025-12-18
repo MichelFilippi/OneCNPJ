@@ -14,8 +14,9 @@ namespace OneCNPJ.DTOs.VOs
         : BaseVO,
           IEntityVO<CnpjEstabelecimento, CnpjEstabelecimentoVO, CnpjEstabelecimentoListaVO>
     {
-        public string CnpjBasico { get; set; } = string.Empty;
-        public virtual CnpjEmpresaVO? Empresa { get; set; }
+        public long CnpjBasico { get; set; }
+
+        public long CnpjEmpresaId { get; set; }
 
         public string CnpjOrdem { get; set; } = string.Empty;
         public string CnpjDv { get; set; } = string.Empty;
@@ -26,18 +27,15 @@ namespace OneCNPJ.DTOs.VOs
         public string SituacaoCadastral { get; set; } = string.Empty;
         public DateTime? DataSituacaoCadastral { get; set; }
 
-        public string MotivoSituacaoCadastralId { get; set; } = string.Empty;
-        public virtual MotivoSituacaoCadastralVO? MotivoSituacaoCadastral { get; set; }
+        public long MotivoSituacaoCadastralId { get; set; } 
 
         public string? NomeCidadeExterior { get; set; }
 
-        public string? PaisId { get; set; }
-        public virtual PaisVO? Pais { get; set; }
+        public long? PaisId { get; set; }
 
         public DateTime? DataInicioAtividade { get; set; }
 
-        public string CnaePrincipalId { get; set; } = string.Empty;
-        public virtual CnaeVO? CnaePrincipal { get; set; }
+        public long CnaePrincipalId { get; set; } 
 
         public virtual List<CnpjEstabelecimentoCnaeSecundarioVO> CnaesSecundarios { get; set; } = [];
 
@@ -49,7 +47,7 @@ namespace OneCNPJ.DTOs.VOs
         public string? Cep { get; set; }
         public string? Uf { get; set; }
 
-        public string MunicipioId { get; set; } = string.Empty;
+        public long MunicipioId { get; set; } 
         public virtual MunicipioVO? Municipio { get; set; }
 
         public CnpjEstabelecimentoVO() { }

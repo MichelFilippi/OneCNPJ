@@ -12,7 +12,7 @@ namespace OneCNPJ.Domain
     public class CnpjSocio : BaseModel, IEntity
     {
         [Column("cnpj_basico")]
-        public string CnpjBasico { get; set; } = string.Empty;
+        public long CnpjBasico { get; set; } 
 
         [ForeignKey(nameof(CnpjBasico))]
         [DeleteBehavior(DeleteBehavior.Restrict)]
@@ -28,7 +28,7 @@ namespace OneCNPJ.Domain
         public string DocumentoSocio { get; set; } = string.Empty;
 
         [Column("qualificacao_socio_id")]
-        public string QualificacaoSocioId { get; set; } = string.Empty;
+        public long QualificacaoSocioId { get; set; } 
 
         [ForeignKey(nameof(QualificacaoSocioId))]
         [DeleteBehavior(DeleteBehavior.Restrict)]

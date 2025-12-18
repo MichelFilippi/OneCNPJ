@@ -1,0 +1,9 @@
+2025-12-18 14:48:34.258 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-12-18 14:48:34.699 -03:00 [INF] Now listening on: https://localhost:7278
+2025-12-18 14:48:34.703 -03:00 [INF] Now listening on: http://localhost:5245
+2025-12-18 14:48:34.784 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-18 14:48:34.785 -03:00 [INF] Hosting environment: Development
+2025-12-18 14:48:34.787 -03:00 [INF] Content root path: C:\Users\miche\source\repos\OneCNPJ\OneCNPJ.API
+2025-12-18 14:48:37.106 -03:00 [INF] Request starting HTTP/2 GET https://localhost:7278/ - null null
+2025-12-18 14:48:37.389 -03:00 [INF] Request finished HTTP/2 GET https://localhost:7278/ - 404 0 null 292.3535ms
+2025-12-18 14:48:37.426 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7278/, Response status code: 404

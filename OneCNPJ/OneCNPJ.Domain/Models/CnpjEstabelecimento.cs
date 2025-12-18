@@ -9,11 +9,14 @@ namespace OneCNPJ.Domain.Models
     public class CnpjEstabelecimento : BaseModel, IEntity
     {
         [Column("cnpj_basico")]
-        public string CnpjBasico { get; set; } = string.Empty;
+        public long CnpjBasico { get; set; }
 
-        [ForeignKey(nameof(CnpjBasico))]
+        [Column("cnpj_empresa")]
+        public long CnpjEmpresaId { get; set; }
+
+        [ForeignKey(nameof(CnpjEmpresaId))]
         [DeleteBehavior(DeleteBehavior.Restrict)]
-        public virtual CnpjEmpresa? Empresa { get; set; }
+        public virtual CnpjEmpresa? CnpjEmpresa { get; set; }
 
         [Column("cnpj_ordem")]
         public string CnpjOrdem { get; set; } = string.Empty; // 4 dígitos
@@ -22,7 +25,7 @@ namespace OneCNPJ.Domain.Models
         public string CnpjDv { get; set; } = string.Empty; // 2 dígitos
 
         [NotMapped]
-        public string Cnpj => $"{CnpjBasico}{CnpjOrdem}{CnpjDv}"; // conveniência
+        public string Cnpj => $"{CnpjEmpreseId}{CnpjOrdem}{CnpjDv}"; // conveniência
 
         [Column("identificador_matriz_filial")]
         public string IdentificadorMatrizFilial { get; set; } = string.Empty; // 1=matriz 2=filial
@@ -37,7 +40,7 @@ namespace OneCNPJ.Domain.Models
         public DateTime? DataSituacaoCadastral { get; set; }
 
         [Column("motivo_situacao_cadastral_id")]
-        public string MotivoSituacaoCadastralId { get; set; } = string.Empty;
+        public long MotivoSituacaoCadastralId { get; set; } 
 
         [ForeignKey(nameof(MotivoSituacaoCadastralId))]
         [DeleteBehavior(DeleteBehavior.Restrict)]
@@ -47,7 +50,7 @@ namespace OneCNPJ.Domain.Models
         public string? NomeCidadeExterior { get; set; }
 
         [Column("pais_id")]
-        public string? PaisId { get; set; }
+        public long? PaisId { get; set; }
 
         [ForeignKey(nameof(PaisId))]
         [DeleteBehavior(DeleteBehavior.Restrict)]
@@ -57,7 +60,7 @@ namespace OneCNPJ.Domain.Models
         public DateTime? DataInicioAtividade { get; set; }
 
         [Column("cnae_principal_id")]
-        public string CnaePrincipalId { get; set; } = string.Empty;
+        public long CnaePrincipalId { get; set; } 
 
         [ForeignKey(nameof(CnaePrincipalId))]
         [DeleteBehavior(DeleteBehavior.Restrict)]
@@ -88,7 +91,7 @@ namespace OneCNPJ.Domain.Models
         public string? Uf { get; set; }
 
         [Column("municipio_id")]
-        public string MunicipioId { get; set; } = string.Empty;
+        public long MunicipioId { get; set; } 
 
         [ForeignKey(nameof(MunicipioId))]
         [DeleteBehavior(DeleteBehavior.Restrict)]

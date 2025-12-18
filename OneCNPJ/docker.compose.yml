@@ -1,0 +1,32 @@
+
+services:
+  api:
+    image: ghcr.io/seu_org/onecnpj:latest
+    ports:
+      - "8086:8080"
+    environment:
+      ConnectionStrings__DefaultConnection: /run/secrets/db_conn
+    secrets:
+      - db_conn
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: one-cnpj
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_password
+    secrets:
+      - db_password
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+
+secrets:
+  db_conn:
+    external: true
+  db_password:
+    external: true
+
+volumes:
+  dbdata:
