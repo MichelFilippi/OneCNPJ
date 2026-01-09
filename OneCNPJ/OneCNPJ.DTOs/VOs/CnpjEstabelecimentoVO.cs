@@ -16,6 +16,7 @@ namespace OneCNPJ.DTOs.VOs
     {
         public long CnpjBasico { get; set; }
 
+        public long ImportacaoId { get; set; }
         public long CnpjEmpresaId { get; set; }
 
         public string CnpjOrdem { get; set; } = string.Empty;
@@ -28,14 +29,15 @@ namespace OneCNPJ.DTOs.VOs
         public DateTime? DataSituacaoCadastral { get; set; }
 
         public long MotivoSituacaoCadastralId { get; set; } 
+        public virtual MotivoSituacaoCadastralVO MotivoSituacaoCadastral { get; set; } 
 
         public string? NomeCidadeExterior { get; set; }
 
-        public long? PaisId { get; set; }
 
         public DateTime? DataInicioAtividade { get; set; }
 
-        public long CnaePrincipalId { get; set; } 
+        public long CnaeId { get; set; } 
+        public virtual CnaeVO Cnae { get; set; }
 
         public virtual List<CnpjEstabelecimentoCnaeSecundarioVO> CnaesSecundarios { get; set; } = [];
 
@@ -46,7 +48,8 @@ namespace OneCNPJ.DTOs.VOs
         public string? Bairro { get; set; }
         public string? Cep { get; set; }
         public string? Uf { get; set; }
-
+        public long? PaisId { get; set; }
+        public virtual PaisVO? Pais { get; set; }
         public long MunicipioId { get; set; } 
         public virtual MunicipioVO? Municipio { get; set; }
 
@@ -57,6 +60,7 @@ namespace OneCNPJ.DTOs.VOs
             return new CnpjEstabelecimentoVO
             {
                 Id = model.Id,
+                ImportacaoId = model.ImportacaoId,
                 CnpjBasico = model.CnpjBasico,
                 CnpjOrdem = model.CnpjOrdem,
                 CnpjDv = model.CnpjDv,
@@ -68,7 +72,7 @@ namespace OneCNPJ.DTOs.VOs
                 NomeCidadeExterior = model.NomeCidadeExterior,
                 PaisId = model.PaisId,
                 DataInicioAtividade = model.DataInicioAtividade,
-                CnaePrincipalId = model.CnaePrincipalId,
+                CnaeId = model.CnaeId,
                 TipoLogradouro = model.TipoLogradouro,
                 Logradouro = model.Logradouro,
                 Numero = model.Numero,
@@ -88,6 +92,7 @@ namespace OneCNPJ.DTOs.VOs
             return new CnpjEstabelecimentoListaVO
             {
                 Id = model.Id,
+                ImportacaoId = model.ImportacaoId,
                 CnpjBasico = model.CnpjBasico,
                 CnpjOrdem = model.CnpjOrdem,
                 CnpjDv = model.CnpjDv,
@@ -108,6 +113,7 @@ namespace OneCNPJ.DTOs.VOs
             return new CnpjEstabelecimento
             {
                 Id = this.Id,
+                ImportacaoId = this.ImportacaoId,
                 CnpjBasico = this.CnpjBasico,
                 CnpjOrdem = this.CnpjOrdem,
                 CnpjDv = this.CnpjDv,
@@ -119,7 +125,7 @@ namespace OneCNPJ.DTOs.VOs
                 NomeCidadeExterior = this.NomeCidadeExterior,
                 PaisId = this.PaisId,
                 DataInicioAtividade = this.DataInicioAtividade,
-                CnaePrincipalId = this.CnaePrincipalId,
+                CnaeId = this.CnaeId,
                 TipoLogradouro = this.TipoLogradouro,
                 Logradouro = this.Logradouro,
                 Numero = this.Numero,

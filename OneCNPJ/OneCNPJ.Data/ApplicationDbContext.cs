@@ -7,25 +7,62 @@ namespace OneCNPJ.Data
 {
     public class ApplicationDbContext : DbContext
     {
-
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        //public DbSet<Cnpj> Cnpj { get; set; }
-        //public DbSet<Conteudo> Conteudos { get; set; }
-        //public DbSet<Falha> Falhas { get; set; }
-        //public DbSet<Ignorado> Ignorados { get; set; }
-        //public DbSet<RegistroClasse> RegistroClasses { get; set; }
-        //public DbSet<RegistroFundo> RegistroFundos { get; set; }
-        //public DbSet<RegistroSubclasse> RegistroSubclasses { get; set; }
+        // Raiz / lote
+        public DbSet<CnpjImportacao> CnpjImportacoes => Set<CnpjImportacao>();
 
-        //public DbSet<Layout> Layouts { get; set; }
-        //public DbSet<LayoutCampo> LayoutCampos { get; set; }
-
+        // Core
         public DbSet<CnpjEmpresa> CnpjEmpresas => Set<CnpjEmpresa>();
-        public DbSet<NaturezaJuridica> NaturezasJuridicas => Set<NaturezaJuridica>();
-        public DbSet<QualificacaoSocio> QualificacoesSocio => Set<QualificacaoSocio>();
+        public DbSet<CnpjEstabelecimento> CnpjEstabelecimentos => Set<CnpjEstabelecimento>();
+        public DbSet<CnpjEstabelecimentoCnaeSecundario> CnpjEstabCnaeSec => Set<CnpjEstabelecimentoCnaeSecundario>();
         public DbSet<CnpjSocio> CnpjSocios => Set<CnpjSocio>();
         public DbSet<CnpjSimples> CnpjSimples => Set<CnpjSimples>();
-        public DbSet<CnpjEstabelecimento> CnpjEstabelecimentos => Set<CnpjEstabelecimento>();
+
+        // Saídas / logs
+        public DbSet<Conteudo> Conteudos => Set<Conteudo>();
+        public DbSet<Falha> Falhas => Set<Falha>();
+        public DbSet<Ignorado> Ignorados => Set<Ignorado>();
+
+        // Satélites
+        public DbSet<Cnae> Cnaes => Set<Cnae>();
+        public DbSet<Municipio> Municipios => Set<Municipio>();
+        public DbSet<Pais> Paises => Set<Pais>();
+        public DbSet<NaturezaJuridica> NaturezasJuridicas => Set<NaturezaJuridica>();
+        public DbSet<QualificacaoSocio> QualificacoesSocio => Set<QualificacaoSocio>();
+        public DbSet<MotivoSituacaoCadastral> MotivosSituacaoCadastral => Set<MotivoSituacaoCadastral>();
+
+        // Se você realmente usa Layout/LayoutCampo no banco
+        public DbSet<Layout> Layouts => Set<Layout>();
+        public DbSet<LayoutCampo> LayoutCampos => Set<LayoutCampo>();
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<NaturezaJuridica>()
+                .Property(p => p.Id)
+                .ValueGeneratedNever();
+
+            modelBuilder.Entity<QualificacaoSocio>()
+                .Property(p => p.Id)
+                .ValueGeneratedNever();
+
+            modelBuilder.Entity<Cnae>()
+                .Property(p => p.Id)
+                .ValueGeneratedNever();
+
+            modelBuilder.Entity<Municipio>()
+                .Property(p => p.Id)
+                .ValueGeneratedNever();
+
+            modelBuilder.Entity<Pais>()
+                .Property(p => p.Id)
+                .ValueGeneratedNever();
+
+            modelBuilder.Entity<MotivoSituacaoCadastral>()
+                .Property(p => p.Id)
+                .ValueGeneratedNever();
+        }
     }
 }

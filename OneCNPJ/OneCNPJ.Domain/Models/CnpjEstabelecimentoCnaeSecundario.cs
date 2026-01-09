@@ -10,6 +10,13 @@ public class CnpjEstabelecimentoCnaeSecundario : BaseModel, IEntity
     [Column("estabelecimento_id")]
     public long EstabelecimentoId { get; set; }
 
+    [Column("importacao_id")]
+    public long ImportacaoId { get; set; }
+
+    [ForeignKey(nameof(ImportacaoId))]
+    public virtual CnpjImportacao? Importacao { get; set; }
+
+
     [ForeignKey(nameof(EstabelecimentoId))]
     [DeleteBehavior(DeleteBehavior.Restrict)]
     public virtual CnpjEstabelecimento? Estabelecimento { get; set; }

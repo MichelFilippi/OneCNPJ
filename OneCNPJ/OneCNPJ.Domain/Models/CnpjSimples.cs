@@ -9,16 +9,18 @@ namespace OneCNPJ.Domain.Models
         [Column("cnpj_basico")]
         public long CnpjBasico { get; set; }
 
+        [Column("importacao_id")]
+        public long ImportacaoId { get; set; }
+
+        [ForeignKey(nameof(ImportacaoId))]
+        public virtual CnpjImportacao? Importacao { get; set; }
+
         [Column("cnpj_empresa")]
         public long CnpjEmpresaId { get; set; }
 
         [ForeignKey(nameof(CnpjEmpresaId))]
         [DeleteBehavior(DeleteBehavior.Restrict)]
         public virtual CnpjEmpresa? CnpjEmpresa { get; set; }
-
-        [ForeignKey(nameof(CnpjBasico))]
-        [DeleteBehavior(DeleteBehavior.Restrict)]
-        public virtual CnpjEmpresa? Empresa { get; set; }
 
         [Column("optante_simples")]
         public bool OptanteSimples { get; set; }

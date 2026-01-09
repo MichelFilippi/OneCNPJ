@@ -13,6 +13,7 @@ namespace OneCNPJ.DTOs.VOs
           IEntityVO<CnpjSimples, CnpjSimplesVO, CnpjSimplesListaVO>
     {
         public long CnpjBasico { get; set; }
+        public long ImportacaoId { get; set; }
         public long CnpjEmpresaId { get; set; }
         public bool OptanteSimples { get; set; }
         public DateTime? DataOpcaoSimples { get; set; }
@@ -29,6 +30,7 @@ namespace OneCNPJ.DTOs.VOs
             return new CnpjSimplesVO
             {
                 Id = model.Id,
+                ImportacaoId = model.ImportacaoId,
                 CnpjBasico = model.CnpjBasico,
                 CnpjEmpresaId = model.CnpjEmpresaId,
                 OptanteSimples = model.OptanteSimples,
@@ -48,6 +50,7 @@ namespace OneCNPJ.DTOs.VOs
             return new CnpjSimplesListaVO
             {
                 Id = model.Id,
+                ImportacaoId = model.ImportacaoId,
                 CnpjBasico = model.CnpjBasico,
                 CnpjEmpresaId = model.CnpjEmpresaId,
                 OptanteSimples = model.OptanteSimples,
@@ -63,6 +66,7 @@ namespace OneCNPJ.DTOs.VOs
             return new CnpjSimples
             {
                 Id = this.Id,
+                ImportacaoId = this.ImportacaoId,
                 CnpjBasico = this.CnpjBasico,
                 CnpjEmpresaId = this.CnpjEmpresaId,
                 OptanteSimples = this.OptanteSimples,

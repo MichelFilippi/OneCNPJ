@@ -1,4 +1,5 @@
-﻿using OneCNPJ.DTOs.VOs.Listas;
+﻿using OneCNPJ.Domain.Models.Satelites;
+using OneCNPJ.DTOs.VOs.Listas;
 using OneCNPJ.DTOs.VOs.Satelites;
 using System;
 using System.Collections.Generic;
@@ -15,9 +16,11 @@ namespace OneCNPJ.DTOs.VOs
               CnpjEstabelecimentoCnaeSecundarioVO,
               CnpjEstabelecimentoCnaeSecundarioListaVO>
     {
+        public long ImportacaoId { get; set; }
         public long EstabelecimentoId { get; set; }
 
-        public long CnaeId { get; set; } 
+        public long CnaeId { get; set; }
+        public virtual CnaeVO? Cnae { get; set; }
 
         public CnpjEstabelecimentoCnaeSecundarioVO() { }
 
@@ -26,6 +29,7 @@ namespace OneCNPJ.DTOs.VOs
             return new CnpjEstabelecimentoCnaeSecundarioVO
             {
                 Id = model.Id,
+                ImportacaoId = model.ImportacaoId,
                 EstabelecimentoId = model.EstabelecimentoId,
                 CnaeId = model.CnaeId,
                 Status = model.Status,
@@ -39,6 +43,7 @@ namespace OneCNPJ.DTOs.VOs
             return new CnpjEstabelecimentoCnaeSecundarioListaVO
             {
                 Id = model.Id,
+                ImportacaoId = model.ImportacaoId,
                 Status = model.Status,
                 DataCriacao = model.DataCriacao,
                 DataAtualizacao = model.DataAtualizacao
@@ -50,6 +55,7 @@ namespace OneCNPJ.DTOs.VOs
             return new CnpjEstabelecimentoCnaeSecundario
             {
                 Id = this.Id,
+                ImportacaoId = this.ImportacaoId,
                 EstabelecimentoId = this.EstabelecimentoId,
                 CnaeId = this.CnaeId,
                 Status = this.Status,

@@ -11,6 +11,12 @@ namespace OneCNPJ.Domain.Models
         [Column("cnpj_basico")]
         public long CnpjBasico { get; set; }
 
+        [Column("importacao_id")]
+        public long ImportacaoId { get; set; }
+
+        [ForeignKey(nameof(ImportacaoId))]
+        public virtual CnpjImportacao? Importacao { get; set; }
+
         [Column("cnpj_empresa")]
         public long CnpjEmpresaId { get; set; }
 
@@ -25,7 +31,7 @@ namespace OneCNPJ.Domain.Models
         public string CnpjDv { get; set; } = string.Empty; // 2 dígitos
 
         [NotMapped]
-        public string Cnpj => $"{CnpjEmpreseId}{CnpjOrdem}{CnpjDv}"; // conveniência
+        public string Cnpj => $"{CnpjEmpresaId}{CnpjOrdem}{CnpjDv}"; // conveniência
 
         [Column("identificador_matriz_filial")]
         public string IdentificadorMatrizFilial { get; set; } = string.Empty; // 1=matriz 2=filial
@@ -59,12 +65,12 @@ namespace OneCNPJ.Domain.Models
         [Column("data_inicio_atividade")]
         public DateTime? DataInicioAtividade { get; set; }
 
-        [Column("cnae_principal_id")]
-        public long CnaePrincipalId { get; set; } 
+        [Column("cnae_id")]
+        public long CnaeId { get; set; } 
 
-        [ForeignKey(nameof(CnaePrincipalId))]
+        [ForeignKey(nameof(CnaeId))]
         [DeleteBehavior(DeleteBehavior.Restrict)]
-        public virtual Cnae? CnaePrincipal { get; set; }
+        public virtual Cnae? Cnae{ get; set; }
 
         public virtual List<CnpjEstabelecimentoCnaeSecundario> CnaesSecundarios { get; set; } = [];
 

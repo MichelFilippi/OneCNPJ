@@ -14,9 +14,12 @@ namespace OneCNPJ.Domain
         [Column("cnpj_basico")]
         public long CnpjBasico { get; set; } 
 
-        [ForeignKey(nameof(CnpjBasico))]
-        [DeleteBehavior(DeleteBehavior.Restrict)]
-        public virtual CnpjEmpresa? Empresa { get; set; }
+        [Column("importacao_id")]
+        public long ImportacaoId { get; set; }
+
+        [ForeignKey(nameof(ImportacaoId))]
+        public virtual CnpjImportacao? Importacao { get; set; }
+
 
         [Column("tipo_socio")]
         public string TipoSocio { get; set; } = string.Empty; // PF/PJ (ou código do layout)
